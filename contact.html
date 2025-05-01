@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Your Brand</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+  <header class="fixed w-full z-50 bg-white shadow">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">YourBrand</h1>
+      <nav class="space-x-6 text-sm font-medium">
+        <a href="index.html" class="hover:text-blue-600 transition">Home</a>
+        <a href="about.html" class="hover:text-blue-600 transition">About</a>
+        <a href="services.html" class="hover:text-blue-600 transition">Services</a>
+        <a href="contact.html" class="text-blue-600 font-semibold">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="pt-32 pb-20 px-6 bg-white">
+    <div class="container mx-auto max-w-2xl">
+      <h2 class="text-4xl font-bold mb-8 text-center animate-fade-in">Get in Touch</h2>
+      <form class="space-y-6 animate-fade-in delay-200">
+        <div>
+          <label class="block text-sm font-medium mb-1" for="name">Name</label>
+          <input class="w-full border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" type="text" id="name" required />
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1" for="email">Email</label>
+          <input class="w-full border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" type="email" id="email" required />
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1" for="message">Message</label>
+          <textarea class="w-full border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" id="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-gray-100 py-6 mt-20">
+    <div class="container mx-auto px-6 text-center text-sm text-gray-600">
+      <p>&copy; 2025 YourBrand. All rights reserved.</p>
+      <div class="mt-2 space-x-4">
+        <a href="#" class="hover:text-blue-600 transition">Privacy Policy</a>
+        <a href="#" class="hover:text-blue-600 transition">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.animate-fade-in').forEach((el, i) => {
+      el.style.opacity = 0;
+      setTimeout(() => {
+        el.style.transition = 'opacity 1s ease-out';
+        el.style.opacity = 1;
+      }, i * 200);
+    });
+  </script>
+</body>
+</html>

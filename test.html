@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Your Brand</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+  <!-- Navbar -->
+  <header class="fixed w-full z-50 bg-white shadow">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">YourBrand</h1>
+      <nav class="space-x-6 text-sm font-medium">
+        <a href="index.html" class="hover:text-blue-600 transition">Home</a>
+        <a href="about.html" class="hover:text-blue-600 transition">About</a>
+        <a href="services.html" class="hover:text-blue-600 transition">Services</a>
+        <a href="contact.html" class="hover:text-blue-600 transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="pt-32 pb-20 bg-gradient-to-r from-emerald-50 to-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6 animate-fade-in">
+        Welcome to Your Brand
+      </h2>
+      <p class="text-lg md:text-xl mb-8 animate-fade-in delay-200">
+        Inspiring minds. Elevating experiences. Empowering you.
+      </p>
+      <a href="about.html" class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-full text-lg font-semibold shadow-lg transition">
+        Learn More
+      </a>
+    </div>
+  </section>
+
+  <!-- Content Body Section -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-12">
+        <h3 class="text-3xl font-bold animate-fade-in">What We Offer</h3>
+        <p class="mt-4 text-gray-600 animate-fade-in delay-200">Our mission is to deliver creative, purposeful, and inspiring solutions.</p>
+      </div>
+      <div class="space-y-16">
+  <div class="md:flex md:items-center md:gap-12 animate-fade-in delay-300">
+    <img src="offer1.png" alt="Creative Ideas" class="w-full md:w-1/2 rounded-lg shadow-md mb-6 md:mb-0">
+    <div class="md:w-1/2">
+      <h4 class="text-2xl font-semibold mb-2 text-blue-600">
+        <a href="services.html" class="hover:underline">Creative Ideas</a>
+      </h4>
+      <p class="text-gray-700">We help you think differently and bring your boldest visions to life through creative and strategic thinking.</p>
+    </div>
+  </div>
+  <div class="md:flex md:items-center md:gap-12 animate-fade-in delay-500 md:flex-row-reverse">
+    <img src="offer1.png" alt="Design Excellence" class="w-full md:w-1/2 rounded-lg shadow-md mb-6 md:mb-0">
+    <div class="md:w-1/2">
+      <h4 class="text-2xl font-semibold mb-2 text-blue-600">
+        <a href="services.html" class="hover:underline">Design Excellence</a>
+      </h4>
+      <p class="text-gray-700">Beautiful, functional, and impactful design is at the core of what we do, bringing clarity and style to every project.</p>
+    </div>
+  </div>
+  <div class="md:flex md:items-center md:gap-12 animate-fade-in delay-700">
+    <img src="offer1.png" alt="Growth Focused" class="w-full md:w-1/2 rounded-lg shadow-md mb-6 md:mb-0">
+    <div class="md:w-1/2">
+      <h4 class="text-2xl font-semibold mb-2 text-blue-600">
+        <a href="services.html" class="hover:underline">Growth Focused</a>
+      </h4>
+      <p class="text-gray-700">We deliver scalable solutions that help businesses grow with confidence, creativity, and clarity.</p>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+  <!-- Our Services Section -->
+  <section class="py-20 bg-blue-50">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-12">
+        <h3 class="text-3xl font-bold animate-fade-in">Our Services</h3>
+        <p class="mt-4 text-gray-600 animate-fade-in delay-200">Explore how we help our clients grow and thrive.</p>
+      </div>
+      <div class="grid gap-10 md:grid-cols-3">
+        <div class="bg-white p-6 rounded-lg shadow-md text-center animate-fade-in delay-300">
+          <img src="offer1.png" alt="Brand Strategy" class="mx-auto mb-4 rounded">
+          <h4 class="text-xl font-semibold">Brand Strategy</h4>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md text-center animate-fade-in delay-500">
+          <img src="https://via.placeholder.com/300x200" alt="Digital Products" class="mx-auto mb-4 rounded">
+          <h4 class="text-xl font-semibold">Digital Products</h4>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md text-center animate-fade-in delay-700">
+          <img src="https://via.placeholder.com/300x200" alt="Marketing Campaigns" class="mx-auto mb-4 rounded">
+          <h4 class="text-xl font-semibold">Marketing Campaigns</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 py-6 mt-20">
+    <div class="container mx-auto px-6 text-center text-sm text-gray-600">
+      <p>&copy; 2025 YourBrand. All rights reserved.</p>
+      <div class="mt-2 space-x-4">
+        <a href="#" class="hover:text-blue-600 transition">Privacy Policy</a>
+        <a href="#" class="hover:text-blue-600 transition">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts for simple fade animation -->
+  <script>
+    document.querySelectorAll('.animate-fade-in').forEach((el, i) => {
+      el.style.opacity = 0;
+      setTimeout(() => {
+        el.style.transition = 'opacity 1s ease-out';
+        el.style.opacity = 1;
+      }, i * 200);
+    });
+  </script>
+</body>
+</html>

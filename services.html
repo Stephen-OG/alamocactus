@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Your Brand</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+  <header class="fixed w-full z-50 bg-white shadow">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">YourBrand</h1>
+      <nav class="space-x-6 text-sm font-medium">
+        <a href="index.html" class="hover:text-blue-600 transition">Home</a>
+        <a href="about.html" class="hover:text-blue-600 transition">About</a>
+        <a href="services.html" class="text-blue-600 font-semibold">Services</a>
+        <a href="contact.html" class="hover:text-blue-600 transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="pt-32 pb-20 px-6 bg-blue-50">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-10 animate-fade-in">Our Services</h2>
+      <div class="grid gap-8 md:grid-cols-3">
+        <div class="bg-white shadow-md rounded-lg p-6 animate-fade-in delay-100">
+          <h3 class="text-xl font-semibold mb-3">Creative Strategy</h3>
+          <p class="text-gray-600">We help shape visions into compelling digital strategies.</p>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-6 animate-fade-in delay-200">
+          <h3 class="text-xl font-semibold mb-3">Design & Branding</h3>
+          <p class="text-gray-600">Our design solutions make your brand shine with purpose and clarity.</p>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-6 animate-fade-in delay-300">
+          <h3 class="text-xl font-semibold mb-3">Digital Development</h3>
+          <p class="text-gray-600">We build responsive websites and applications that perform.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-100 py-6 mt-20">
+    <div class="container mx-auto px-6 text-center text-sm text-gray-600">
+      <p>&copy; 2025 YourBrand. All rights reserved.</p>
+      <div class="mt-2 space-x-4">
+        <a href="#" class="hover:text-blue-600 transition">Privacy Policy</a>
+        <a href="#" class="hover:text-blue-600 transition">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.animate-fade-in').forEach((el, i) => {
+      el.style.opacity = 0;
+      setTimeout(() => {
+        el.style.transition = 'opacity 1s ease-out';
+        el.style.opacity = 1;
+      }, i * 200);
+    });
+  </script>
+</body>
+</html>

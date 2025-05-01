@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Your Brand</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+  <!-- Navbar -->
+  <header class="fixed w-full z-50 bg-white shadow">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">YourBrand</h1>
+      <nav class="space-x-6 text-sm font-medium">
+        <a href="index.html" class="hover:text-blue-600 transition">Home</a>
+        <a href="about.html" class="text-blue-600 font-semibold">About</a>
+        <a href="services.html" class="hover:text-blue-600 transition">Services</a>
+        <a href="contact.html" class="hover:text-blue-600 transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="pt-32 pb-20 px-6 bg-white">
+    <div class="container mx-auto max-w-3xl text-center">
+      <h2 class="text-4xl font-bold mb-6 animate-fade-in">Our Story</h2>
+      <p class="text-lg leading-relaxed text-gray-700 animate-fade-in delay-200">
+        YourBrand was founded with a mission to elevate minds and inspire positive change.
+        We blend creativity, technology, and purpose to deliver unique solutions and
+        meaningful experiences. Our team believes in authenticity, innovation, and community.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 py-6 mt-20">
+    <div class="container mx-auto px-6 text-center text-sm text-gray-600">
+      <p>&copy; 2025 YourBrand. All rights reserved.</p>
+      <div class="mt-2 space-x-4">
+        <a href="#" class="hover:text-blue-600 transition">Privacy Policy</a>
+        <a href="#" class="hover:text-blue-600 transition">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts for fade animation -->
+  <script>
+    document.querySelectorAll('.animate-fade-in').forEach((el, i) => {
+      el.style.opacity = 0;
+      setTimeout(() => {
+        el.style.transition = 'opacity 1s ease-out';
+        el.style.opacity = 1;
+      }, i * 200);
+    });
+  </script>
+</body>
+</html>
