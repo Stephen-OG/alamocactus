@@ -10,36 +10,70 @@
   <!-- Navbar -->
   <header class="fixed w-full z-50 bg-white shadow">
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Alamo Cactus Logo</h1>
+      <a href="index.html">
+        <img src="images/logo_resized.png" alt="Alamo Cactus Logo" class="h-12 md:h-14 object-contain">
+      </a>
       <nav class="space-x-6 text-sm font-medium">
         <a href="index.html" class="hover:text-emerald-600 transition">Home</a>
         <a href="about.html" class="hover:text-emerald-600 transition">About</a>
         <a href="services.html" class="hover:text-emerald-600 transition">Services</a>
+        <a href="team.html" class="hover:text-emerald-600 transition">Team</a>
         <a href="contact.html" class="hover:text-emerald-600 transition">Contact</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="pt-32 pb-20 bg-gradient-to-r from-emerald-50 to-white">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6 animate-fade-in">
-        Alamo Cactus
+  <!-- Hero Section -->
+  <section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-emerald-50 via-white to-emerald-100">
+    <div class="container mx-auto px-6 text-center pt-32">
+      <h2 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6 animate-fade-in text-emerald-800">
+        Your Path to Mental Wellness
       </h2>
-      <p class="text-lg md:text-xl mb-8 animate-fade-in delay-200">
-        Inspiring minds. Elevating experiences. Empowering you.
+      <p class="text-lg md:text-xl mb-8 animate-fade-in delay-200 text-gray-700">
+        At Alamo Cactos, we believe that mental health is just as important as physical health. Our mission is to support individuals through compassionate care, evidence-based practices, and personalized treatment plans that empower long-term healing. Whether you’re navigating anxiety, depression, trauma, or simply looking for support — we’re here for you.
       </p>
       <a href="about.html" class="bg-emerald-600 text-white px-6 py-3 rounded-full text-lg font-semibold shadow-lg hover:bg-emerald-700 transition">
-        Learn More
+        BOOK A CONSULTATION
       </a>
     </div>
   </section>
 
+    <!-- Testimonial Slider -->
+<section class="pt-20 pb-20 bg-white">
+  <div class="container mx-auto px-6 text-center">
+    <h3 class="text-3xl font-bold text-emerald-800 mb-8">What Our Clients Say</h3>
+    <div id="testimonial-slider" class="relative overflow-hidden max-w-2xl mx-auto">
+      <div class="testimonial-slide transition-opacity duration-700 ease-in-out">
+        <div class="flex flex-col items-center text-center">
+          <img src="images/image8.jpg" alt="Jane A." class="w-40 h-40 md:w-48 md:h-48 rounded-full mb-6 shadow-xl ring-4 ring-emerald-100">
+          <p class="text-lg italic text-gray-700">“Alamo Cactos helped me regain balance and confidence. Their care was heartfelt and empowering.”</p>
+          <span class="mt-4 font-semibold text-emerald-700">— Jane A., Client</span>
+        </div>
+      </div>
+      <div class="testimonial-slide hidden opacity-0 transition-opacity duration-700 ease-in-out">
+        <div class="flex flex-col items-center text-center">
+          <img src="images/image9.jpg" alt="Jane A." class="w-40 h-40 md:w-48 md:h-48 rounded-full mb-6 shadow-xl ring-4 ring-emerald-100">
+          <p class="text-lg italic text-gray-700">“A team that listens and really understands. I felt safe, heard, and supported.”</p>
+          <span class="mt-4 font-semibold text-emerald-700">— Michael D., Client</span>
+        </div>
+      </div>
+      <div class="testimonial-slide hidden opacity-0 transition-opacity duration-700 ease-in-out">
+        <div class="flex flex-col items-center text-center">
+          <img src="images/image12.jpg" alt="Jane A." class="w-40 h-40 md:w-48 md:h-48 rounded-full mb-6 shadow-xl ring-4 ring-emerald-100">
+          <p class="text-lg italic text-gray-700">“Professional, kind, and insightful. I recommend Alamo Cactos without hesitation.”</p>
+          <span class="mt-4 font-semibold text-emerald-700">— Rita T., Client</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
   <!-- Content Body Section -->
-  <section class="py-20 bg-white">
+  <!-- <section class="py-20 bg-white">
     <div class="container mx-auto px-6">
       <div class="text-center mb-12">
-        <h3 class="text-3xl font-bold animate-fade-in">What We Offer</h3>
+        <h3 class="text-3xl font-bold text-emerald-600 animate-fade-in">What We Offer</h3>
         <p class="mt-4 text-gray-600 animate-fade-in delay-200">Our mission is to deliver creative, purposeful, and inspiring solutions.</p>
       </div>
       <div class="space-y-16">
@@ -72,7 +106,7 @@
   </div>
 </div>
 </div>
-</section>
+</section> -->
 
   <!-- Our Services Section -->
 <section class="py-20 bg-emerald-50">
@@ -84,16 +118,21 @@
     <div class="grid gap-10 md:grid-cols-3">
       <div class="bg-white p-6 rounded-lg shadow-md text-center animate-fade-in delay-300">
         <img src="images/image11_.jpeg" alt="Brand Strategy" class="mx-auto mb-4 rounded">
-        <h4 class="text-xl font-semibold">Brand Strategy</h4>
+        <h4 class="text-xl font-semibold text-emerald-600">Psychiatric Evaluations</h4>
       </div>
       <div class="bg-white p-6 rounded-lg shadow-md text-center animate-fade-in delay-500">
         <img src="images/image11_.jpeg" alt="Digital Products" class="mx-auto mb-4 rounded">
-        <h4 class="text-xl font-semibold">Digital Products</h4>
+        <h4 class="text-xl font-semibold text-emerald-600">Medication Management</h4>
       </div>
       <div class="bg-white p-6 rounded-lg shadow-md text-center animate-fade-in delay-700">
         <img src="images/image11_.jpeg" alt="Marketing Campaigns" class="mx-auto mb-4 rounded">
-        <h4 class="text-xl font-semibold">Marketing Campaigns</h4>
+        <h4 class="text-xl font-semibold text-emerald-600">Individual Therapy</h4>
       </div>
+    </div>
+    <div class="mt-12 text-center">
+      <a href="services.html" class="inline-block bg-emerald-600 text-white px-6 py-3 rounded-full text-lg font-semibold shadow hover:bg-emerald-700 transition">
+        View All Services
+      </a>
     </div>
   </div>
 </section>
@@ -118,6 +157,19 @@
         el.style.opacity = 1;
       }, i * 200);
     });
+
+     // Testimonial slider logic
+    const slides = document.querySelectorAll('.testimonial-slide');
+    let index = 0;
+    setInterval(() => {
+      slides[index].classList.add('hidden');
+      slides[index].classList.remove('opacity-100');
+      slides[index].classList.add('opacity-0');
+      index = (index + 1) % slides.length;
+      slides[index].classList.remove('hidden');
+      slides[index].classList.remove('opacity-0');
+      slides[index].classList.add('opacity-100');
+    }, 5000);
   </script>
 </body>
 </html>
