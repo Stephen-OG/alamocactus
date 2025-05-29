@@ -3,3 +3,8 @@ image for offer px = 400 x 250
 image for services = 300 x 200
 
 what we off px = 400 x 250
+
+Zocdoc link
+<a href="https://www.zocdoc.com/practice/alamo-cactus-healing-stream-137372?lock=true&isNewPatient=false&referrerType=widget" class="bg-emerald-600 text-white px-6 py-3 rounded-full text-lg font-semibold shadow-lg hover:bg-emerald-700 transition">
+        BOOK A CONSULTATION
+      </a>

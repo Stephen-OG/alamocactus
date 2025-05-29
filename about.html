@@ -3,56 +3,97 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | Your Brand</title>
+  <title>About Us | Alamo Cactos</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-white text-gray-900 font-sans">
   <!-- Navbar -->
   <header class="fixed w-full z-50 bg-white shadow">
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold">YourBrand</h1>
+      <a href="index.html">
+        <img src="images/logo_resized.png" alt="Alamo Cactus Logo" class="h-12 md:h-14 object-contain">
+      </a>
       <nav class="space-x-6 text-sm font-medium">
-        <a href="index.html" class="hover:text-blue-600 transition">Home</a>
-        <a href="about.html" class="text-blue-600 font-semibold">About</a>
-        <a href="services.html" class="hover:text-blue-600 transition">Services</a>
+        <a href="index.html" class="hover:text-emerald-600 transition">Home</a>
+        <a href="about.html" class="text-emerald-600 font-semibold">About</a>
+        <a href="services.html" class="hover:text-emerald-600 transition">Services</a>
         <a href="team.html" class="hover:text-emerald-600 transition">Team</a>
-        <a href="contact.html" class="hover:text-blue-600 transition">Contact</a>
+        <a href="contact.html" class="hover:text-emerald-600 transition">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- About Section -->
-  <section class="pt-32 pb-20 px-6 bg-white">
-    <div class="container mx-auto max-w-3xl text-center">
-      <h2 class="text-4xl font-bold mb-6 animate-fade-in">Our Story</h2>
-      <p class="text-lg leading-relaxed text-gray-700 animate-fade-in delay-200">
-        YourBrand was founded with a mission to elevate minds and inspire positive change.
-        We blend creativity, technology, and purpose to deliver unique solutions and
-        meaningful experiences. Our team believes in authenticity, innovation, and community.
+  <!-- Hero -->
+  <section class="pt-32 pb-20 bg-gradient-to-br from-emerald-50 via-white to-emerald-100">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-4xl font-bold text-emerald-700 mb-4">About Alamo Cactos</h1>
+      <p class="text-gray-700 max-w-2xl mx-auto text-lg">
+        Compassionate care for a healthier mind and life.
       </p>
     </div>
   </section>
 
+  <!-- Our Story -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6 max-w-4xl">
+      <h2 class="text-2xl font-bold text-emerald-700 mb-4">Our Mission</h2>
+      <p class="text-gray-700 mb-6 leading-relaxed">
+        At Alamo Cactos Healing Stream Mental Wellness, we believe that mental health is a vital part of overall wellness. Founded on the principles of empathy, clinical excellence, and holistic support, our mission is to walk alongside individuals and families through their healing journey.
+      </p>
+
+      <h2 class="text-2xl font-bold text-emerald-700 mb-4">What We Do</h2>
+      <p class="text-gray-700 leading-relaxed">
+        We provide a range of evidence-based mental health services including psychiatric evaluations, therapy, medication management, and lifestyle support. Our team is made up of licensed professionals who deeply care about helping you thrive emotionally, mentally, and spiritually.
+      </p>
+    </div>
+  </section>
+
+  <!-- Founder Section -->
+  <section class="py-20 bg-emerald-50">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+      <div class="md:w-1/2 text-center md:text-left">
+        <h2 class="text-3xl font-bold text-emerald-700 mb-4">Meet Our Founder</h2>
+        <p class="text-gray-700 text-lg mb-4">
+          Our founder, <strong>Dr. Grace Okafor</strong>, established Alamo Cactos with a passion for healing and a heart for community. With over 15 years of clinical experience in mental health and wellness, she brings deep expertise and a warm, personal approach to care.
+        </p>
+        <p class="text-gray-600">Her vision is to create a sanctuary for healing, where every person is seen, heard, and supported.</p>
+      </div>
+      <div class="md:w-1/2 flex justify-center">
+        <img src="images/image10.jpeg" alt="Dr. Grace Okafor" class="w-64 h-64 md:w-80 md:h-80 rounded-full shadow-xl object-cover">
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Values -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-emerald-700 mb-8">Our Core Values</h2>
+      <div class="grid gap-8 md:grid-cols-3">
+        <div class="bg-emerald-50 p-6 rounded-lg shadow">
+          <h3 class="text-xl font-semibold text-emerald-700 mb-2">Compassion</h3>
+          <p class="text-gray-700 text-sm">We meet each client with kindness, understanding, and emotional safety.</p>
+        </div>
+        <div class="bg-emerald-50 p-6 rounded-lg shadow">
+          <h3 class="text-xl font-semibold text-emerald-700 mb-2">Integrity</h3>
+          <p class="text-gray-700 text-sm">We are committed to ethical, transparent, and accountable care.</p>
+        </div>
+        <div class="bg-emerald-50 p-6 rounded-lg shadow">
+          <h3 class="text-xl font-semibold text-emerald-700 mb-2">Excellence</h3>
+          <p class="text-gray-700 text-sm">We continuously grow in our skills and services to better serve you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer -->
-  <footer class="bg-gray-100 py-6 mt-20">
+  <footer class="bg-gray-100 py-6">
     <div class="container mx-auto px-6 text-center text-sm text-gray-600">
-      <p>&copy; 2025 YourBrand. All rights reserved.</p>
+      <p>&copy; 2025 Alamo Cactus Healing Stream. All rights reserved.</p>
       <div class="mt-2 space-x-4">
-        <a href="#" class="hover:text-blue-600 transition">Privacy Policy</a>
-        <a href="#" class="hover:text-blue-600 transition">Terms of Service</a>
+        <a href="#" class="hover:text-emerald-600 transition">Privacy Policy</a>
+        <a href="#" class="hover:text-emerald-600 transition">Terms of Service</a>
       </div>
     </div>
   </footer>
-
-  <!-- Scripts for fade animation -->
-  <script>
-    document.querySelectorAll('.animate-fade-in').forEach((el, i) => {
-      el.style.opacity = 0;
-      setTimeout(() => {
-        el.style.transition = 'opacity 1s ease-out';
-        el.style.opacity = 1;
-      }, i * 200);
-    });
-  </script>
 </body>
 </html>

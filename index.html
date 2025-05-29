@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home | Your Brand</title>
+  <title>Home | Alamo Cactus</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-white text-gray-900 font-sans">
@@ -14,7 +14,7 @@
         <img src="images/logo_resized.png" alt="Alamo Cactus Logo" class="h-12 md:h-14 object-contain">
       </a>
       <nav class="space-x-6 text-sm font-medium">
-        <a href="index.html" class="hover:text-emerald-600 transition">Home</a>
+        <a href="index.html" class="text-emerald-600 transition">Home</a>
         <a href="about.html" class="hover:text-emerald-600 transition">About</a>
         <a href="services.html" class="hover:text-emerald-600 transition">Services</a>
         <a href="team.html" class="hover:text-emerald-600 transition">Team</a>
@@ -33,7 +33,7 @@
       <p class="text-lg md:text-xl mb-8 animate-fade-in delay-200 text-gray-700">
         At Alamo Cactos, we believe that mental health is just as important as physical health. Our mission is to support individuals through compassionate care, evidence-based practices, and personalized treatment plans that empower long-term healing. Whether you’re navigating anxiety, depression, trauma, or simply looking for support — we’re here for you.
       </p>
-      <a href="about.html" class="bg-emerald-600 text-white px-6 py-3 rounded-full text-lg font-semibold shadow-lg hover:bg-emerald-700 transition">
+      <a href="https://www.zocdoc.com/practice/alamo-cactus-healing-stream-137372?lock=true&isNewPatient=false&referrerType=widget" class="bg-emerald-600 text-white px-6 py-3 rounded-full text-lg font-semibold shadow-lg hover:bg-emerald-700 transition">
         BOOK A CONSULTATION
       </a>
     </div>
@@ -137,10 +137,29 @@
   </div>
 </section>
 
+<div class="text-center mt-12">
+  <a style="display: inline-block"
+     href="https://www.zocdoc.com/practice/alamo-cactus-healing-stream-137372?lock=true&isNewPatient=false&referrerType=widget"
+     class="zd-plugin"
+     data-type="book-button"
+     data-practice-id="137372"
+     title="Alamo Cactus Healing Stream">
+     <img src="https://offsiteSchedule.zocdoc.com/images/remote/rb_BookOnline_Blue_162x71.png?type=bobjs&monolith_provider_id=137372&practice_id=pt_fYXiT2TaPkmlehwFCrwcBg"
+          alt="Alamo Cactus Healing Stream"
+          style="border: 0;" />
+  </a>
+</div>
+
+<!-- <div> 
+  <a href='https://www.zocdoc.com/practice/alamo-cactus-healing-stream-137372?lock=true&isNewPatient=false&referrerType=widget' target='_blank' title='Alamo Cactus Healing Stream'>
+    <img src='https://offsiteSchedule.zocdoc.com/images/remote/rb_BookOnline_Blue_162x71.png?type=bobhtml&monolith_provider_id=137372&practice_id=pt_fYXiT2TaPkmlehwFCrwcBg' alt='Alamo Cactus Healing Stream' title='Alamo Cactus Healing Stream' style='border:0'>
+  </a>
+</div> -->
+
   <!-- Footer -->
   <footer class="bg-gray-100 py-6 mt-20">
     <div class="container mx-auto px-6 text-center text-sm text-gray-600">
-      <p>&copy; 2025 YourBrand. All rights reserved.</p>
+      <p>&copy; 2025 Alamo Cactus Healing Stream. All rights reserved.</p>
       <div class="mt-2 space-x-4">
         <a href="#" class="hover:text-emerald-600 transition">Privacy Policy</a>
         <a href="#" class="hover:text-emerald-600 transition">Terms of Service</a>
@@ -170,6 +189,16 @@
       slides[index].classList.remove('opacity-0');
       slides[index].classList.add('opacity-100');
     }, 5000);
+
+    // Zocdoc
+    (function (d) {
+    var script = d.createElement('script');
+    script.type = 'text/javascript';
+    script.async = true;
+    script.src = 'https://offsiteschedule.zocdoc.com/plugin/embed';
+    var s = d.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(script, s);
+  })(document);
   </script>
 </body>
 </html>
