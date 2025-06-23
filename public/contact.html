@@ -14,11 +14,19 @@
         <img src="images/logo_resized.png" alt="Alamo Cactus Logo" class="h-12 md:h-14 object-contain">
       </a>
       <nav class="space-x-6 text-sm font-medium">
-        <a href="index.html" class="hover:text-emerald-600 transition">Home</a>
+        <a href="index.html" class="text-emerald-600 transition">Home</a>
         <a href="about.html" class="hover:text-emerald-600 transition">About</a>
         <a href="services.html" class="hover:text-emerald-600 transition">Services</a>
-        <a href="team.html" class="hover:text-emerald-600 transition">Team</a>
-        <a href="contact.html" class="text-emerald-600 font-semibold">Contact</a>
+        <!-- <a href="team.html" class="hover:text-emerald-600 transition">Team</a> -->
+        <div class="relative group inline-block">
+          <button class="hover:text-emerald-600 transition">Service Area</button>
+          <div class="absolute hidden group-hover:block bg-white shadow-md mt-2 rounded-md z-50 min-w-[160px]">
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-emerald-50">Texas</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-emerald-50">Washington State</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-emerald-50">New Mexico</a>
+          </div>
+        </div>
+        <a href="contact.html" class="hover:text-emerald-600 transition">Contact</a>
       </nav>
     </div>
   </header>
