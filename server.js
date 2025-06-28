@@ -43,7 +43,7 @@ app.post("/contact", async (req, res) => {
   const mailOptions = {
     from: email,
     to: process.env.EMAIL_USER,
-    subject: `Message from ${name}`,
+    subject: `${name} Contacted Us`,
     text: message
   };
 
