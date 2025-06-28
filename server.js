@@ -51,7 +51,6 @@ app.post("/contact", async (req, res) => {
     await transporter.sendMail(mailOptions);
     res.status(200).json({ success: true, message: "Message sent successfully" });
   } catch (error) {
-    console.error(error);
     res.status(500).json({ success: false, message: "Failed to send message" });
   }
 });
@@ -60,7 +59,6 @@ app.post("/contact", async (req, res) => {
 app.post('/appointment', upload.array('insurance_card', 2), async (req, res) => {
   try {
     const formData = req.body;
-    console.log(formData)
     const files = req.files.map(file => `${req.protocol}://${req.get('host')}/uploads/${file.filename}`);
 
     const mailOptions = {
@@ -73,7 +71,6 @@ app.post('/appointment', upload.array('insurance_card', 2), async (req, res) => 
     await transporter.sendMail(mailOptions);
     res.status(200).json({ message: 'Form submitted successfully' });
   } catch (err) {
-    console.error(err);
     res.status(500).json({ error: 'Submission failed' });
   }
 });
